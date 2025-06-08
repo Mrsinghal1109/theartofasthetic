@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Art of Aesthetic - Premium Design Services</title>
+<meta name="description" content="Premium design services including branding, social media posts, business cards, and eBook design by The Art of Aesthetic.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#9A8C98',secondary:'#F2E9E4'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5 {
+font-family: 'Playfair Display', serif;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=elegant%20minimalist%20design%20studio%20workspace%20with%20soft%20natural%20light%2C%20neutral%20colors%2C%20designer%20tools%2C%20creative%20atmosphere%2C%20high-end%20professional%20environment%2C%20artistic%20elements%2C%20clean%20composition%2C%20premium%20aesthetic%2C%20soft%20shadows%2C%20muted%20tones%2C%20inspiring%20creative%20space&width=1920&height=1080&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.header-transparent {
+background-color: transparent;
+transition: background-color 0.3s ease;
+}
+.header-solid {
+background-color: rgba(255, 255, 255, 0.95);
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.nav-link {
+position: relative;
+}
+.nav-link:after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #9A8C98;
+transition: width 0.3s ease;
+}
+.nav-link:hover:after, .nav-link.active:after {
+width: 100%;
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.portfolio-item:hover .portfolio-overlay {
+opacity: 1;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #9A8C98;
+}
+.custom-checkbox {
+appearance: none;
+-webkit-appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #9A8C98;
+border-radius: 4px;
+outline: none;
+cursor: pointer;
+position: relative;
+}
+.custom-checkbox:checked {
+background-color: #9A8C98;
+}
+.custom-checkbox:checked:after {
+content: '';
+position: absolute;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+top: 3px;
+left: 6px;
+transform: rotate(45deg);
+}
+</style>
+</head>
+<body class="bg-white">
+<header id="header" class="header-transparent fixed w-full z-50 transition-all duration-300">
+<div class="container mx-auto px-6 py-4 flex items-center justify-between">
+<a href="#" class="text-3xl font-['Tan Pearl'] text-gray-800">The Art of Aesthetic</a>
+<nav class="hidden md:block">
+<ul class="flex space-x-8">
+<li><a href="#top" class="nav-link active text-gray-800 font-medium">Home</a></li>
+<li><a href="#about" class="nav-link text-gray-800 font-medium">About</a></li>
+<li><a href="#services" class="nav-link text-gray-800 font-medium">Services</a></li>
+<li><a href="#portfolio" class="nav-link text-gray-800 font-medium">Portfolio</a></li>
+<li><a href="#contact" class="nav-link text-gray-800 font-medium">Contact</a></li>
+</ul>
+</nav>
+<div class="hidden md:flex items-center space-x-4">
+<a href="https://www.instagram.com/theart_of_asthetic?igsh=YTVnb3lxYmc0OWVp&utm_source=qr" target="_blank" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-instagram-line ri-lg"></i>
+</a>
+<a href="https://www.behance.net/theartofasthe" target="_blank" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-behance-line ri-lg"></i>
+</a>
+<a href="https://wa.me/919911914009?text=Hi, I want a custom design from @theart_of_asthetic. Please share the details and pricing." target="_blank" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-whatsapp-line"></i>
+</a>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center" id="mobile-menu-button">
+<i class="ri-menu-line ri-2x text-gray-800"></i>
+</button>
+</div>
+<div id="mobile-menu" class="md:hidden bg-white py-4 px-6 hidden">
+<ul class="space-y-4">
+<li><a href="#top" class="block text-gray-800 font-medium hover:text-primary transition-colors">Home</a></li>
+<li><a href="#about" class="block text-gray-800 font-medium hover:text-primary transition-colors">About</a></li>
+<li><a href="#services" class="block text-gray-800 font-medium hover:text-primary transition-colors">Services</a></li>
+<li><a href="#portfolio" class="block text-gray-800 font-medium hover:text-primary transition-colors">Portfolio</a></li>
+<li><a href="#contact" class="block text-gray-800 font-medium hover:text-primary transition-colors">Contact</a></li>
+</ul>
+<div class="flex items-center space-x-4 mt-6">
+<a href="#" id="instagram-link" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-instagram-line ri-lg"></i>
+</a>
+<div id="instagram-dialog" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+<div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+<div class="flex justify-between items-start mb-6">
+<h3 class="text-xl font-semibold text-gray-800">Coming Soon!</h3>
+<button id="close-instagram-dialog" class="text-gray-400 hover:text-gray-600">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<p class="text-gray-600 mb-6">Our Instagram profile is coming soon! Subscribe to be notified when we launch.</p>
+<form id="instagram-notify-form" class="space-y-4">
+<input type="email" placeholder="Your email address" class="w-full px-4 py-2 border border-gray-200 rounded focus:border-primary" required>
+<button type="submit" class="w-full bg-primary text-white px-6 py-2 rounded-button font-medium hover:bg-opacity-90 transition-all">Notify Me</button>
+</form>
+</div>
+</div>
+<a href="#" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-behance-line ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+<i class="ri-whatsapp-line ri-lg"></i>
+</a>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="hero-section relative h-screen flex items-center">
+<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">Elevate Your Brand with Premium Design</h1>
+<p class="text-xl text-white mb-8">Creating timeless, elegant designs that capture your brand's essence and elevate your visual identity.</p>
+<div class="flex flex-wrap gap-4">
+<a href="#services" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">Explore Services</a>
+<a href="#portfolio" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-button font-medium hover:bg-white hover:text-gray-900 transition-all whitespace-nowrap">View Portfolio</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section Preview -->
+<section id="about" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=elegant%20female%20designer%20working%20in%20a%20modern%20minimalist%20studio%20with%20natural%20light%2C%20creative%20workspace%20with%20design%20tools%2C%20professional%20setting%2C%20artistic%20environment%2C%20neutral%20color%20palette%2C%20high-end%20aesthetic%2C%20soft%20shadows&width=600&height=800&seq=2&orientation=portrait" alt="About The Art of Aesthetic" class="rounded-lg shadow-lg w-full h-auto object-cover">
+</div>
+<div class="md:w-1/2">
+<h2 class="text-4xl font-bold text-gray-800 mb-6">About The Art of Aesthetic</h2>
+<p class="text-gray-600 mb-6">I'm Mr Singhal, the creative mind behind The Art of Aesthetic. With over 8 years of experience in design, I've developed a passion for creating visual stories that resonate with audiences and elevate brands.</p>
+<p class="text-gray-600 mb-8">My design philosophy centers around the perfect balance of elegance, functionality, and innovation. Every project is approached with meticulous attention to detail and a commitment to exceeding client expectations.</p>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">Design Tools & Expertise</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-8">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-md mb-3">
+<i class="ri-photoshop-line ri-xl text-primary"></i>
+</div>
+<span class="text-gray-700 text-sm">Photoshop</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-md mb-3">
+<i class="ri-illustrator-line ri-xl text-primary"></i>
+</div>
+<span class="text-gray-700 text-sm">Illustrator</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-md mb-3">
+<i class="ri-file-list-3-line ri-xl text-primary"></i>
+</div>
+<span class="text-gray-700 text-sm">InDesign</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-md mb-3">
+<i class="ri-palette-line ri-xl text-primary"></i>
+</div>
+<span class="text-gray-700 text-sm">Canva</span>
+</div>
+</div>
+<a href="9911914009" class="inline-block bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">Get in Touch</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-800 mb-4">Premium Design Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Comprehensive design solutions tailored to elevate your brand and create a lasting impression on your audience.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-paint-brush-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">Brand Identity</h3>
+<p class="text-gray-600 mb-6">Complete branding solutions including logo design, color palette development, typography selection, and brand guidelines.</p>
+<a href="https://wa.me/?text=I'm interested in your Brand Identity services" class="inline-flex items-center text-primary font-medium hover:underline">
+<span>Contact via WhatsApp</span>
+<i class="ri-arrow-right-line ri-sm ml-2"></i>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-layout-4-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">Social Media Design</h3>
+<p class="text-gray-600 mb-6">Eye-catching social media graphics, post templates, story designs, and content creation that aligns with your brand identity.</p>
+<a href="https://wa.me/?text=I'm interested in your Social Media Design services" class="inline-flex items-center text-primary font-medium hover:underline">
+<span>Contact via WhatsApp</span>
+<i class="ri-arrow-right-line ri-sm ml-2"></i>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-book-open-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">eBook Design</h3>
+<p class="text-gray-600 mb-6">Professional eBook layout design, cover creation, and interior formatting that enhances readability and visual appeal.</p>
+<a href="https://wa.me/?text=I'm interested in your eBook Design services" class="inline-flex items-center text-primary font-medium hover:underline">
+<span>Contact via WhatsApp</span>
+<i class="ri-arrow-right-line ri-sm ml-2"></i>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-mail-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">Print Collateral</h3>
+<p class="text-gray-600 mb-6">Business cards, letterheads, brochures, flyers, and other print materials designed with premium quality and attention to detail.</p>
+<a href="https://wa.me/?text=I'm interested in your Print Collateral services" class="inline-flex items-center text-primary font-medium hover:underline">
+<span>Contact via WhatsApp</span>
+<i class="ri-arrow-right-line ri-sm ml-2"></i>
+</a>
+</div>
+<!-- Service 5 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-computer-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">Website Graphics</h3>
+<p class="text-gray-600 mb-6">Custom website graphics, banners, icons, and visual elements that enhance your online presence and user experience.</p>
+<a href="https://wa.me/?text=I'm interested in your Website Graphics services" class="inline-flex items-center text-primary font-medium hover:underline">
+<span>Contact via WhatsApp</span>
+<i class="ri-arrow-right-line ri-sm ml-2"></i>
+</a>
+</div>
+<!-- Service 6 -->
+<div class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6">
+<i class="ri-presentation-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4">Presentation Design</h3>
+<p class="text-gray-600 mb-6">Professional PowerPoint or Keynote templates and slides designed to impress your audience and effectively communicate your message.</p>
+<a href="https://wa.me/?text=I'm interested in your Presentation Design services" class="inline-flex items-center text-primary font-medium hover:underline">
+<span>Contact via WhatsApp</span>
+<i class="ri-arrow-right-line ri-sm ml-2"></i>
+</a>
+</div>
+</div>
+<div class="mt-16 text-center">
+<a href="https://www.instagram.com/theart_of_asthetic?igsh=YTVnb3lxYmc0OWVp&utm_source=qr" class="inline-block bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">Request Custom Service</a>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-800 mb-4">Portfolio</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Explore a selection of my recent design projects showcasing creativity, attention to detail, and brand-focused solutions.</p>
+</div>
+<div class="mb-8 flex justify-center">
+<div class="inline-flex bg-white p-1 rounded-full shadow-sm">
+<button class="portfolio-filter-btn active px-6 py-2 rounded-full bg-primary text-white whitespace-nowrap" data-filter="all">All</button>
+<button class="portfolio-filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-100 whitespace-nowrap" data-filter="branding">Branding</button>
+<button class="portfolio-filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-100 whitespace-nowrap" data-filter="social">Social Media</button>
+<button class="portfolio-filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-100 whitespace-nowrap" data-filter="print">Print</button>
+<button class="portfolio-filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-100 whitespace-nowrap" data-filter="ebook">eBooks</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Portfolio Item 1 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md" data-category="branding">
+<img src="https://readdy.ai/api/search-image?query=elegant%20minimalist%20logo%20design%20for%20a%20luxury%20spa%20brand%20with%20soft%20neutral%20colors%2C%20professional%20branding%20presentation%20mockup%20on%20light%20background%2C%20premium%20brand%20identity%20design%2C%20business%20cards%20and%20stationery&width=600&height=450&seq=3&orientation=landscape" alt="Luxury Spa Branding" class="w-full h-80 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+<h3 class="text-2xl font-semibold text-white mb-2">Serene Spa Branding</h3>
+<p class="text-white mb-4">Complete brand identity for a luxury wellness spa</p>
+<button class="view-project-btn bg-white text-gray-900 px-6 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">View Project</button>
+</div>
+</div>
+<!-- Portfolio Item 2 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md" data-category="social">
+<img src="https://readdy.ai/api/search-image?query=elegant%20social%20media%20post%20templates%20for%20fashion%20brand%2C%20instagram%20grid%20layout%20with%20neutral%20colors%2C%20minimalist%20design%2C%20professional%20social%20media%20marketing%20materials%2C%20cohesive%20feed%20aesthetic&width=600&height=450&seq=4&orientation=landscape" alt="Fashion Social Media" class="w-full h-80 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+<h3 class="text-2xl font-semibold text-white mb-2">Elegance Fashion Social Media</h3>
+<p class="text-white mb-4">Instagram template design for luxury fashion brand</p>
+<button class="view-project-btn bg-white text-gray-900 px-6 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">View Project</button>
+</div>
+</div>
+<!-- Portfolio Item 3 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md" data-category="ebook">
+<img src="https://readdy.ai/api/search-image?query=professional%20ebook%20design%20mockup%20for%20cooking%20recipes%2C%20elegant%20cookbook%20layout%20with%20beautiful%20typography%2C%20minimalist%20food%20photography%2C%20clean%20page%20design%2C%20premium%20publishing%20quality&width=600&height=450&seq=5&orientation=landscape" alt="Cookbook Design" class="w-full h-80 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+<h3 class="text-2xl font-semibold text-white mb-2">Gourmet Cookbook Design</h3>
+<p class="text-white mb-4">eBook layout and cover design for culinary recipes</p>
+<button class="view-project-btn bg-white text-gray-900 px-6 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">View Project</button>
+</div>
+</div>
+<!-- Portfolio Item 4 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md" data-category="print">
+<img src="https://readdy.ai/api/search-image?query=elegant%20business%20card%20design%20mockup%20with%20minimalist%20typography%2C%20premium%20stationery%20design%20for%20boutique%20brand%2C%20professional%20print%20materials%20on%20light%20background%2C%20high-end%20business%20collateral&width=600&height=450&seq=6&orientation=landscape" alt="Business Card Design" class="w-full h-80 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+<h3 class="text-2xl font-semibold text-white mb-2">Boutique Print Collateral</h3>
+<p class="text-white mb-4">Business cards and stationery for luxury boutique</p>
+<button class="view-project-btn bg-white text-gray-900 px-6 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">View Project</button>
+</div>
+</div>
+<!-- Portfolio Item 5 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md" data-category="branding">
+<img src="https://readdy.ai/api/search-image?query=modern%20cafe%20branding%20mockup%20with%20logo%20design%2C%20menu%20layout%2C%20coffee%20cups%20and%20packaging%2C%20cohesive%20brand%20identity%20for%20specialty%20coffee%20shop%2C%20premium%20aesthetic%20with%20neutral%20colors&width=600&height=450&seq=7&orientation=landscape" alt="Cafe Branding" class="w-full h-80 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+<h3 class="text-2xl font-semibold text-white mb-2">Artisan Cafe Branding</h3>
+<p class="text-white mb-4">Complete brand identity for specialty coffee shop</p>
+<button class="view-project-btn bg-white text-gray-900 px-6 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">View Project</button>
+</div>
+</div>
+<!-- Portfolio Item 6 -->
+<div class="portfolio-item group relative rounded-lg overflow-hidden shadow-md" data-category="social">
+<img src="https://readdy.ai/api/search-image?query=elegant%20social%20media%20campaign%20for%20jewelry%20brand%2C%20instagram%20posts%20with%20product%20photography%2C%20minimalist%20design%2C%20luxury%20aesthetic%2C%20professional%20marketing%20materials%20with%20soft%20neutral%20colors&width=600&height=450&seq=8&orientation=landscape" alt="Jewelry Social Media" class="w-full h-80 object-cover object-top">
+<div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+<h3 class="text-2xl font-semibold text-white mb-2">Luxury Jewelry Campaign</h3>
+<p class="text-white mb-4">Social media content for high-end jewelry brand</p>
+<button class="view-project-btn bg-white text-gray-900 px-6 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">View Project</button>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a href="#contact" class="inline-block bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">Discuss Your Project</a>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-800 mb-4">Client Testimonials</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Hear what my clients have to say about their experience working with The Art of Aesthetic.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white rounded-lg shadow-md p-8">
+<div class="flex items-center mb-6">
+<div class="text-primary">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">"Working with Mr Singhal was an absolute pleasure. He took the time to understand our brand vision and translated it into a stunning visual identity that perfectly represents our values. The attention to detail was exceptional."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<span class="text-gray-700 font-semibold">TS</span>
+</div>
+<div>
+<h4 class="text-gray-900 font-semibold">Tushar Singhal</h4>
+<p class="text-gray-600 text-sm">owner, Mr kitchen mart</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white rounded-lg shadow-md p-8">
+<div class="flex items-center mb-6">
+<div class="text-primary">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">" Mr Singhal design work for our social media has completely transformed our online presence. Our engagement has increased significantly, and we've received countless compliments on our new aesthetic. Highly recommended!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<span class="text-gray-700 font-semibold">SA</span>
+</div>
+<div>
+<h4 class="text-gray-900 font-semibold">Shoarya Aggarwal</h4>
+<p class="text-gray-600 text-sm">founder, Fare Fuzz</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white rounded-lg shadow-md p-8">
+<div class="flex items-center mb-6">
+<div class="text-primary">
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<p class="text-gray-600 italic mb-6">"The eBook design Mr Singhal created for our cookbook exceeded all expectations. The layout is beautiful, the typography is perfect, and the overall design enhances the content in ways we couldn't have imagined. A true professional!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<span class="text-gray-700 font-semibold">NG</span>
+</div>
+<div>
+<h4 class="text-gray-900 font-semibold">Nitin Garg</h4>
+<p class="text-gray-600 text-sm">Author, Gourmet Gatherings</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Ready to elevate your brand with premium design? Let's discuss your project and bring your vision to life.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+<div class="lg:w-1/2">
+<form id="contact-form" class="bg-white rounded-lg shadow-md p-8">
+<div class="mb-6">
+<label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your name">
+</div>
+<div class="mb-6">
+<label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your email">
+</div>
+<div class="mb-6">
+<label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+<input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Subject">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your message"></textarea>
+</div>
+<div class="mb-6 flex items-center">
+<input type="checkbox" id="consent" class="custom-checkbox mr-3">
+<label for="consent" class="text-gray-600 text-sm">I agree to the processing of my personal data for contact purposes.</label>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">Send Message</button>
+</form>
+</div>
+<div class="lg:w-1/2">
+<div class="bg-white rounded-lg shadow-md p-8 h-full">
+<h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-user-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-gray-900 font-medium mb-1">Name</h4>
+<p class="text-gray-600">Mr Singhal</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-gray-900 font-medium mb-1">Email</h4>
+<p class="text-gray-600">theartofasthetic@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-whatsapp-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-gray-900 font-medium mb-1">WhatsApp</h4>
+<p class="text-gray-600">+91 9911914009</p>
+<a href="https://wa.me/919911914009?text=Hi, I want a custom design from @theart_of_asthetic. Please share the details and pricing." class="inline-flex items-center text-primary font-medium hover:underline mt-2">
+<span>Message on WhatsApp</span>
+<i class="ri-arrow-right-line ri-sm ml-2"></i>
+</a>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4">
+<i class="ri-time-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-gray-900 font-medium mb-1">Business Hours</h4>
+<p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+<p class="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="text-gray-900 font-medium mb-4">Follow Me</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-700 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-behance-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-16 bg-primary bg-opacity-5">
+<div class="container mx-auto px-6">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Subscribe to My Newsletter</h2>
+<p class="text-gray-600 mb-8">Stay updated with the latest design trends, tips, and exclusive offers.</p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-button border-none shadow-sm focus:ring-2 focus:ring-primary">
+<button type="submit" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">Subscribe</button>
+</form>
+<p class="text-gray-500 text-sm mt-4">By subscribing, you agree to receive email communications from The Art of Aesthetic.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<div>
+<h3 class="text-2xl font-['Tan Pearl'] mb-6">The Art of Aesthetic</h3>
+<p class="text-gray-400 mb-6">Creating timeless, elegant designs that capture your brand's essence and elevate your visual identity.</p>
+<div class="flex space-x-4">
+<a href="https://www.instagram.com/theart_of_asthetic?igsh=YTVnb3lxYmc0OWVp&utm_source=qr" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.behance.net/theartofasthe" target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-behance-line"></i>
+</a>
+<a href="https://wa.me/919911914009?text=Hi, I want a custom design from @theart_of_asthetic. Please share the details and pricing." target="_blank" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition-colors">
+<i class="ri-whatsapp-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+<li><a href="#portfolio" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Services</h4>
+<ul class="space-y-3">
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Brand Identity</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Social Media Design</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">eBook Design</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Print Collateral</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Website Graphics</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-6">Contact</h4>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="ri-mail-line mr-3 mt-1 text-gray-400"></i>
+<span class="text-gray-400">theartofasthetic@gmail.com</span>
+</li>
+<li class="flex items-start">
+<i class="ri-whatsapp-line mr-3 mt-1 text-gray-400"></i>
+<span class="text-gray-400">+91 9911914009</span>
+</li>
+<li class="flex items-start">
+<i class="ri-time-line mr-3 mt-1 text-gray-400"></i>
+<span class="text-gray-400">Mon-Fri: 9AM-6PM<br>Sat: 10AM-2PM</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 The Art of Aesthetic. All rights reserved.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-6">
+<a href="#" id="back-to-top" class="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white shadow-lg opacity-0 invisible transition-all">
+<i class="ri-arrow-up-line ri-lg"></i>
+</a>
+</div>
+</footer>
+<!-- Portfolio Item Modal -->
+<div id="project-modal" class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center hidden">
+<div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+<div class="p-6 flex justify-between items-start border-b">
+<h3 id="modal-title" class="text-2xl font-semibold text-gray-800">Project Title</h3>
+<button id="close-modal" class="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-gray-900">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<div class="p-6">
+<div id="modal-content" class="space-y-6">
+<!-- Content will be dynamically inserted here -->
+</div>
+</div>
+</div>
+</div>
+<script id="header-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const header = document.getElementById('header');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 50) {
+header.classList.remove('header-transparent');
+header.classList.add('header-solid');
+} else {
+header.classList.remove('header-solid');
+header.classList.add('header-transparent');
+}
+});
+});
+</script>
+<script id="mobile-menu-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+if (mobileMenu.classList.contains('hidden')) {
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x text-gray-800"></i>';
+} else {
+mobileMenuButton.innerHTML = '<i class="ri-close-line ri-2x text-gray-800"></i>';
+}
+});
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x text-gray-800"></i>';
+});
+});
+});
+</script>
+<script id="portfolio-filter">
+document.addEventListener('DOMContentLoaded', function() {
+const filterButtons = document.querySelectorAll('.portfolio-filter-btn');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+filterButtons.forEach(button => {
+button.addEventListener('click', function() {
+// Remove active class from all buttons
+filterButtons.forEach(btn => {
+btn.classList.remove('active', 'bg-primary', 'text-white');
+btn.classList.add('text-gray-700', 'hover:bg-gray-100');
+});
+// Add active class to clicked button
+this.classList.add('active', 'bg-primary', 'text-white');
+this.classList.remove('text-gray-700', 'hover:bg-gray-100');
+const filter = this.getAttribute('data-filter');
+// Filter portfolio items
+portfolioItems.forEach(item => {
+if (filter === 'all' || item.getAttribute('data-category') === filter) {
+item.style.display = 'block';
+} else {
+item.style.display = 'none';
+}
+});
+});
+});
+});
+</script>
+<script id="portfolio-modal">
+document.addEventListener('DOMContentLoaded', function() {
+const projectButtons = document.querySelectorAll('.view-project-btn');
+const modal = document.getElementById('project-modal');
+const closeModal = document.getElementById('close-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalContent = document.getElementById('modal-content');
+// Project data (in a real project, this would come from a database)
+const projectData = {
+'Serene Spa Branding': {
+title: 'Serene Spa Branding',
+category: 'Brand Identity',
+client: 'Serene Wellness Spa',
+completed: 'March 2025',
+description: 'A complete brand identity project for a luxury wellness spa. The design concept focused on creating a serene, elegant aesthetic that reflects the premium nature of the spa services while maintaining a sense of calm and tranquility.',
+deliverables: ['Logo Design', 'Color Palette', 'Typography System', 'Business Cards', 'Letterhead', 'Brochure Design', 'Signage', 'Digital Assets'],
+image: 'https://readdy.ai/api/search-image?query=elegant%20minimalist%20logo%20design%20for%20a%20luxury%20spa%20brand%20with%20soft%20neutral%20colors%2C%20professional%20branding%20presentation%20mockup%20on%20light%20background%2C%20premium%20brand%20identity%20design%2C%20business%20cards%20and%20stationery&width=800&height=600&seq=9&orientation=landscape'
+},
+'Elegance Fashion Social Media': {
+title: 'Elegance Fashion Social Media',
+category: 'Social Media Design',
+client: 'Elegance Fashion Boutique',
+completed: 'April 2025',
+description: 'A comprehensive social media design package for a luxury fashion boutique. The project included creating a cohesive Instagram feed aesthetic, story templates, and promotional post designs that align with the brand's elegant positioning.',
+deliverables: ['Instagram Feed Template', 'Story Highlights', 'Promotional Posts', 'Carousel Templates', 'Social Media Style Guide'],
+image: 'https://readdy.ai/api/search-image?query=elegant%20social%20media%20post%20templates%20for%20fashion%20brand%2C%20instagram%20grid%20layout%20with%20neutral%20colors%2C%20minimalist%20design%2C%20professional%20social%20media%20marketing%20materials%2C%20cohesive%20feed%20aesthetic&width=800&height=600&seq=10&orientation=landscape'
+},
+'Gourmet Cookbook Design': {
+title: 'Gourmet Cookbook Design',
+category: 'eBook Design',
+client: 'Chef Rachel Liu',
+completed: 'February 2025',
+description: 'A beautifully designed cookbook featuring gourmet recipes. The design focused on elegant typography, clean layouts, and a sophisticated color palette that enhances the food photography while maintaining readability.',
+deliverables: ['Cover Design', 'Interior Layout', 'Typography System', 'Chapter Dividers', 'Recipe Layouts', 'Print & Digital Versions'],
+image: 'https://readdy.ai/api/search-image?query=professional%20ebook%20design%20mockup%20for%20cooking%20recipes%2C%20elegant%20cookbook%20layout%20with%20beautiful%20typography%2C%20minimalist%20food%20photography%2C%20clean%20page%20design%2C%20premium%20publishing%20quality&width=800&height=600&seq=11&orientation=landscape'
+},
+'Boutique Print Collateral': {
+title: 'Boutique Print Collateral',
+category: 'Print Design',
+client: 'Olivia Boutique',
+completed: 'May 2025',
+description: 'A premium print collateral package for a high-end boutique. The design features minimalist typography, elegant layouts, and a sophisticated color palette that reflects the boutique's luxury positioning.',
+deliverables: ['Business Cards', 'Shopping Bags', 'Gift Cards', 'Hang Tags', 'Packaging', 'Thank You Cards'],
+image: 'https://readdy.ai/api/search-image?query=elegant%20business%20card%20design%20mockup%20with%20minimalist%20typography%2C%20premium%20stationery%20design%20for%20boutique%20brand%2C%20professional%20print%20materials%20on%20light%20background%2C%20high-end%20business%20collateral&width=800&height=600&seq=12&orientation=landscape'
+},
+'Artisan Cafe Branding': {
+title: 'Artisan Cafe Branding',
+category: 'Brand Identity',
+client: 'Craft Coffee Co.',
+completed: 'January 2025',
+description: 'A complete brand identity for a specialty coffee shop. The design concept focused on creating a warm, artisanal aesthetic that communicates the cafe's commitment to quality and craftsmanship.',
+deliverables: ['Logo Design', 'Color Palette', 'Typography System', 'Menu Design', 'Packaging', 'Signage', 'Digital Assets'],
+image: 'https://readdy.ai/api/search-image?query=modern%20cafe%20branding%20mockup%20with%20logo%20design%2C%20menu%20layout%2C%20coffee%20cups%20and%20packaging%2C%20cohesive%20brand%20identity%20for%20specialty%20coffee%20shop%2C%20premium%20aesthetic%20with%20neutral%20colors&width=800&height=600&seq=13&orientation=landscape'
+},
+'Luxury Jewelry Campaign': {
+title: 'Luxury Jewelry Campaign',
+category: 'Social Media Design',
+client: 'Lumiere Jewelry',
+completed: 'June 2025',
+description: 'A sophisticated social media campaign for a high-end jewelry brand. The design features elegant layouts, premium photography, and a luxurious color palette that showcases the jewelry pieces in their best light.',
+deliverables: ['Instagram Posts', 'Story Templates', 'Carousel Designs', 'Ad Creatives', 'Campaign Style Guide'],
+image: 'https://readdy.ai/api/search-image?query=elegant%20social%20media%20campaign%20for%20jewelry%20brand%2C%20instagram%20posts%20with%20product%20photography%2C%20minimalist%20design%2C%20luxury%20aesthetic%2C%20professional%20marketing%20materials%20with%20soft%20neutral%20colors&width=800&height=600&seq=14&orientation=landscape'
+}
+};
+projectButtons.forEach(button => {
+button.addEventListener('click', function(e) {
+e.preventDefault();
+// Get project title from parent element
+const portfolioItem = this.closest('.portfolio-item');
+const projectTitle = portfolioItem.querySelector('h3').textContent;
+// Get project data
+const project = projectData[projectTitle];
+if (project) {
+// Set modal title
+modalTitle.textContent = project.title;
+// Build modal content
+modalContent.innerHTML = `
+<img src="${project.image}" alt="${project.title}" class="w-full h-auto rounded-lg mb-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+<div>
+<h4 class="text-sm font-semibold text-gray-500 mb-1">CATEGORY</h4>
+<p class="text-gray-900">${project.category}</p>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-gray-500 mb-1">CLIENT</h4>
+<p class="text-gray-900">${project.client}</p>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-gray-500 mb-1">COMPLETED</h4>
+<p class="text-gray-900">${project.completed}</p>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-semibold text-gray-800 mb-3">Project Overview</h4>
+<p class="text-gray-600 mb-6">${project.description}</p>
+</div>
+<div>
+<h4 class="text-xl font-semibold text-gray-800 mb-3">Deliverables</h4>
+<ul class="list-disc pl-5 text-gray-600">
+${project.deliverables.map(item => `<li>${item}</li>`).join('')}
+</ul>
+</div>
+`;
+// Show modal
+modal.classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+});
+});
+// Close modal
+closeModal.addEventListener('click', function() {
+modal.classList.add('hidden');
+document.body.style.overflow = '';
+});
+// Close modal when clicking outside
+modal.addEventListener('click', function(e) {
+if (e.target === modal) {
+modal.classList.add('hidden');
+document.body.style.overflow = '';
+}
+});
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+modal.classList.add('hidden');
+document.body.style.overflow = '';
+}
+});
+});
+</script>
+<script id="form-validation">
+document.addEventListener('DOMContentLoaded', function() {
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+contactForm.addEventListener('submit', function(e) {
+e.preventDefault();
+// Get form fields
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const subject = document.getElementById('subject').value;
+const message = document.getElementById('message').value;
+const consent = document.getElementById('consent').checked;
+// Simple validation
+let isValid = true;
+if (!name) {
+isValid = false;
+document.getElementById('name').classList.add('border-red-500');
+} else {
+document.getElementById('name').classList.remove('border-red-500');
+}
+if (!email || !email.includes('@')) {
+isValid = false;
+document.getElementById('email').classList.add('border-red-500');
+} else {
+document.getElementById('email').classList.remove('border-red-500');
+}
+if (!subject) {
+isValid = false;
+document.getElementById('subject').classList.add('border-red-500');
+} else {
+document.getElementById('subject').classList.remove('border-red-500');
+}
+if (!message) {
+isValid = false;
+document.getElementById('message').classList.add('border-red-500');
+} else {
+document.getElementById('message').classList.remove('border-red-500');
+}
+if (!consent) {
+isValid = false;
+document.getElementById('consent').classList.add('border-red-500');
+} else {
+document.getElementById('consent').classList.remove('border-red-500');
+}
+// If valid, submit form (in a real project, this would send data to a server)
+if (isValid) {
+// Simulate form submission
+contactForm.reset();
+alert('Thank you for your message! I will get back to you soon.');
+}
+});
+}
+});
+</script>
+<script id="back-to-top">
+document.addEventListener('DOMContentLoaded', function() {
+const backToTopButton = document.getElementById('back-to-top');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 300) {
+backToTopButton.classList.remove('opacity-0', 'invisible');
+backToTopButton.classList.add('opacity-100', 'visible');
+} else {
+backToTopButton.classList.remove('opacity-100', 'visible');
+backToTopButton.classList.add('opacity-0', 'invisible');
+}
+});
+backToTopButton.addEventListener('click', function(e) {
+e.preventDefault();
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+});
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const navLinks = document.querySelectorAll('.nav-link');
+const mobileNavLinks = document.querySelectorAll('#mobile-menu a');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+function setActiveNavLink() {
+const sections = ['top', 'about', 'services', 'portfolio', 'contact'];
+const scrollPosition = window.scrollY + window.innerHeight / 3;
+sections.forEach(sectionId => {
+const section = sectionId === 'top' ? document.documentElement : document.getElementById(sectionId);
+if (section) {
+const sectionTop = sectionId === 'top' ? 0 : section.offsetTop;
+const sectionBottom = sectionId === 'top' ? window.innerHeight : section.offsetTop + section.offsetHeight;
+const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+const mobileNavLink = document.querySelector(`#mobile-menu a[href="#${sectionId}"]`);
+if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+navLinks.forEach(link => link.classList.remove('active'));
+mobileNavLinks.forEach(link => link.classList.remove('active'));
+if (navLink) navLink.classList.add('active');
+if (mobileNavLink) mobileNavLink.classList.add('active');
+}
+}
+});
+}
+function smoothScroll(targetId) {
+if (targetId === 'top') {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+} else {
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+const headerHeight = document.getElementById('header').offsetHeight;
+const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+}
+}
+if (window.innerWidth < 768) {
+mobileMenu.classList.add('hidden');
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-2x text-gray-800"></i>';
+}
+}
+navLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+smoothScroll(targetId);
+});
+});
+mobileNavLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+smoothScroll(targetId);
+});
+});
+let isScrolling;
+window.addEventListener('scroll', () => {
+window.clearTimeout(isScrolling);
+isScrolling = setTimeout(setActiveNavLink, 50);
+});
+setActiveNavLink();
+});
+</script>
+</body>
+</html>
