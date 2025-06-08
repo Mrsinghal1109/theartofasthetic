@@ -4,7 +4,7 @@ Welcome to **The Art of Aesthetic** – a personal design showcase built using s
 
 ## 🌐 Live Website
 
-🔗 [Click here to view the live site](https://theartofasthetic.github.io/theartofaesthetic/)
+🔗 [Click here to view the live site][(https://theartofasthetic.github.io/theartofasthetic/)
 
 ## 📁 Project Structure
 
